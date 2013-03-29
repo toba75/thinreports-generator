@@ -10,6 +10,10 @@ module Prawn
       font.compute_width_of(string, options) +
         (character_spacing * (font.character_count(string) - 1))
     end
+  end
+  
+  module Images
+    class Image
     
   private
     # Create around alias.
@@ -42,5 +46,6 @@ module Prawn
       @data[:Length] = @stream.length
       @compressed = true
     end
+  end
   end
 end
