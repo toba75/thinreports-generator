@@ -1,7 +1,7 @@
 # coding: utf-8
 
 begin
-  gem 'prawn', '0.12.0'
+  gem 'prawn', '1.0.0.rc1'
   require 'prawn'
 rescue LoadError
   puts 'ThinReports requires Prawn = 0.12.0. ' +
