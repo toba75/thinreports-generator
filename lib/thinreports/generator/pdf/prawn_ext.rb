@@ -15,7 +15,7 @@ module Prawn
   module Images
     class Image
     
-  private
+  
     # Create around alias.
     alias_method :original_calc_image_dimensions, :calc_image_dimensions
     
