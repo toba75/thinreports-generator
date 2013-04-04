@@ -19,9 +19,10 @@ module Prawn
     # Create around alias.
     alias_method :original_calc_image_dimensions, :calc_image_dimensions
     
-    def calc_image_dimensions(info, options)
+    def calc_image_dimensions(options)
       if options[:auto_fit]
-        w, h = info.width, info.height
+        w = options[:width] || width
+        h = options[:height] || height
         sw, sh = options.delete(:auto_fit)
         
         if w > sw || h > sh
