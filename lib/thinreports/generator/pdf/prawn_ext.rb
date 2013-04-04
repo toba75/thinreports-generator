@@ -29,7 +29,7 @@ module Prawn
           options[:fit] = [sw, sh]
         end
       end
-      original_calc_image_dimensions(info, options)
+      original_calc_image_dimensions(options)
     end
   end
 
